@@ -1,6 +1,6 @@
-package com.example.addon.hud;
+package imp.client.hud;
 
-import com.example.addon.Addon;
+import imp.client.Addon;
 import meteordevelopment.meteorclient.systems.hud.HudElement;
 import meteordevelopment.meteorclient.systems.hud.HudElementInfo;
 import meteordevelopment.meteorclient.systems.hud.HudRenderer;

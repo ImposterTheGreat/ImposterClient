@@ -1,8 +1,8 @@
-package com.example.addon;
+package imp.client;
 
-import com.example.addon.commands.CommandExample;
-import com.example.addon.hud.HudExample;
-import com.example.addon.modules.ModuleExample;
+import imp.client.commands.CommandExample;
+import imp.client.hud.HudExample;
+import imp.client.modules.ModuleExample;
 import com.mojang.logging.LogUtils;
 import meteordevelopment.meteorclient.addons.MeteorAddon;
 import meteordevelopment.meteorclient.commands.Commands;
@@ -14,7 +14,7 @@ import org.slf4j.Logger;
 
 public class Addon extends MeteorAddon {
     public static final Logger LOG = LogUtils.getLogger();
-    public static final Category CATEGORY = new Category("Example");
+    public static final Category COMBAT = new Category("Sus-Combat");
     public static final HudGroup HUD_GROUP = new HudGroup("Example");
 
     @Override
@@ -33,11 +33,11 @@ public class Addon extends MeteorAddon {
 
     @Override
     public void onRegisterCategories() {
-        Modules.registerCategory(CATEGORY);
+        Modules.registerCategory(COMBAT);
     }
 
     @Override
     public String getPackage() {
-        return "com.example.addon";
+        return "Installing RAT";
     }
 }
